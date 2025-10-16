@@ -13,7 +13,7 @@ const logger = require("firebase-functions/logger");
 // Create and deploy your first functions
 // https://firebase.google.com/docs/functions/get-started
 
-exports.helloWorldFB = onRequest({
+exports.helloWorldFBGH = onRequest({
   preserveExternalChanges: true,
   concurrency: 5,
   timeoutSeconds: 30,
@@ -21,6 +21,7 @@ exports.helloWorldFB = onRequest({
   region: "us-central1",
   minInstances: 0,
   maxInstances: 10,
+  invoker: "public",
   serviceAccount: "crjob-vpcsc@dennysp-dev.iam.gserviceaccount.com",
 }, (request, response) => {
   logger.info("Hello logs!", {structuredData: true});
