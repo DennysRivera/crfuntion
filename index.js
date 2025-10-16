@@ -18,7 +18,7 @@ exports.helloWorldFBGH = onRequest({
   concurrency: 5,
   timeoutSeconds: 30,
   memory: "1GiB",
-  region: "us-central1",
+  region: "us-ceast1",
   minInstances: 0,
   maxInstances: 10,
   invoker: "public",
