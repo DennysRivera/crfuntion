@@ -16,7 +16,7 @@ const logger = require("firebase-functions/logger");
 exports.helloWorldFB = onRequest({
   preserveExternalChanges: true,
   concurrency: 5,
-  timeoutSeconds: 300,
+  timeoutSeconds: 30,
   memory: "1GiB",
   region: "us-central1",
   minInstances: 0,
