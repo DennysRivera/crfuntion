@@ -19,7 +19,7 @@ exports.helloWorldFB = onRequest({
   timeoutSeconds: 30,
   memory: "1GiB",
   region: "us-central1",
-  minInstances: 0,
+  minInstances: 1,
   maxInstances: 10,
   serviceAccount: "crjob-vpcsc@dennysp-dev.iam.gserviceaccount.com",
 }, (request, response) => {
